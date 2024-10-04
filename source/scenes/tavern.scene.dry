@@ -36,8 +36,7 @@ You start a fight with a random pirate. You get a litle more hungry.
 
 @leave
 new-page: true
-choose-if: hunger < 5
-- #harbour
+go-to: @harbour
 
 
 @end-activity
