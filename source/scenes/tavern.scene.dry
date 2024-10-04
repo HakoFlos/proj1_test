@@ -12,7 +12,7 @@ You are [+ hunger: qhunger +].
 
 - @eat : Eat something
 - @brawl : Start a fight
-- @root : Leave the Tavern
+- @leave_tavern : Leave the Tavern
 
 
 @eat
@@ -34,9 +34,10 @@ go-to: @end-activity
 
 You start a fight with a random pirate. You get a litle more hungry.
 
-@leave
+@leave_tavern
 new-page: true
-go-to: @harbour
+go-to: @root
+
 
 @end-activity
 
