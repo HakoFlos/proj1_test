@@ -35,9 +35,7 @@ go-to: @end-activity
 You start a fight with a random pirate. You get a litle more hungry.
 
 @leave
-new-page: true
 go-to: @harbour
-
 
 @end-activity
 
