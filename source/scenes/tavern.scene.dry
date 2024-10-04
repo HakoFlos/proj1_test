@@ -13,7 +13,6 @@ You are [+ hunger: qhunger +].
 
 - @eat : Eat something
 - @brawl : Start a fight
-- @root : Leave the Tavern
 
 
 @eat
