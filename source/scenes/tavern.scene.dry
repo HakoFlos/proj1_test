@@ -12,6 +12,7 @@ You are [+ hunger: qhunger +].
 
 - @eat : Eat something
 - @brawl : Start a fight
+- @leave : Leave the Tavern
 
 
 @eat
@@ -32,6 +33,11 @@ on-departure: hunger += 1
 go-to: @end-activity
 
 You start a fight with a random pirate. You get a litle more hungry.
+
+@leave
+new-page: true
+choose-if: hunger < 5
+- #harbour
 
 
 @end-activity
