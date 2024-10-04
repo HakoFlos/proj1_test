@@ -9,6 +9,7 @@ stories fill the air as people eat, drink, and have a good time.
 
 You are [+ hunger: qhunger +].
 
+# choices
 
 - @eat : Eat something
 - @brawl : Start a fight
