@@ -1,0 +1,14 @@
+title: Listen to Songs
+new-page: false
+tags: browse
+on-arrival: time += 10
+
+You decide to listen to some songs. You don't really know which ones to choose, so you just pick at random and   
+let your thoughts float. 
+
+You stare at the album cover on your screen. 
+
+It is now [+ time : qtime +].
+
+Look at something else?
+

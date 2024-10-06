@@ -1,0 +1,13 @@
+title: Watch Educational Videos
+new-page: false
+tags: browse
+on-arrival: time += 10
+
+You choose to watch some educational videos on Youtube. They are about physics.
+
+It is now [+ time : qtime +].
+
+Look at something else?
+
+# add different subjects later on
+

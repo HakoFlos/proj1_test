@@ -1,9 +1,5 @@
-# qhunger
+# qtime
 # Due to a bug, a qdisplay file must begin with an empty line, here between the comment and the content itself.
 
-(-1..0) : full
-(0..1) : satisfied
-(1..2) : hungry
-(2..3) : famished
-(3..4) : starving
-(4..5) : ravenous
+(0..59) : "23:" + time
+(60..119) : "0:" + time
