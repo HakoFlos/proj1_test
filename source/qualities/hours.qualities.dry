@@ -1,3 +1,0 @@
-name: hours
-initial: 23
-0 if time >= 60
