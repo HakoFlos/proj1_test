@@ -1,3 +1,2 @@
 name: minutes
 initial: 0
-content: time%60
