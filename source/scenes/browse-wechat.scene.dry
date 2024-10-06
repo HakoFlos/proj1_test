@@ -1,0 +1,103 @@
+title: Check your Wechat
+new-page: false
+tags: browse
+on-arrival: time += 1
+
+You check your Wechat. Nothing especially urgent. 
+
+-@moments: Check moments
+-@friends: Text one of your friends
+-@boyfriend: Text your boyfriend
+
+
+@moments
+choose-if: @moments = 0
+unavailable-subtitle: You already checked it.
+
+Two selfies. One in bikini, hmmm. Some vent about school and holiday homeworks... Yeah, homework sucks. You   
+cannot agree more on this issue.
+
+-@comment: Join in the vent
+-@continue: Continue scrolling
+
+@comment
+
+You post a comment complaining about how you can possibly not started on half of your homework when it's the last  
+two days of holiday.
+
+-@moments: Check moments
+-@friends: Text one of your friends
+-@boyfriend: Text your boyfriend
+
+@continue
+
+Advertisements for a psychology competition... Daily updates. News from a former classmate now studying in Japan.  
+Cool!
+
+-@moments: Check moments
+-@friends: Text one of your friends
+-@boyfriend: Text your boyfriend
+
+@friends
+
+You text a computer-obsessed friend of yours about the new engine for interactive fiction that you found. "Sound  
+cool!", he replies.
+
+-@moments: Check moments
+-@friends2: Text one of your friends
+-@boyfriend: Text your boyfriend
+
+@friends2
+choose-if: @friends2 = 0
+unavailable-subtitle: There's no one else awake. At least, not anyone that you're familiar enough with.
+You text an acquaintance asking to "see" their math homework. Well, she and you both know what it   
+means - you're definitely not plagiarizing.
+
+-@moments: Check moments
+-@friends2: Text one of your friends
+-@boyfriend: Text your boyfriend
+
+@boyfriend
+You were supposed to send him love messages, but you argue some more about "*the neccesity of giving up*". Which  
+basically means that you hate putting in effort for your studies, and you have no ambition of going to a good  
+university. At least not if it takes that much to achieve.
+
+He leaves a text saying that he's gone to shower.
+
+-@moments: Check moments
+-@friends2: Text one of your friends
+-@boyfriend2: Text your boyfriend
+
+@boyfriend2
+You wait for some time, and ask him how long he's gonna take. You are becoming rather sleepy at this time.
+
+-@moments: Check moments
+-@friends2: Text one of your friends
+-@boyfriend3: Text your boyfriend
+
+@boyfriend3
+You wait some more, and he comes back apologizing for arguing with you.
+
+-@forgive: Forgive him
+-@dont_forgive: Don't forgive him
+
+@forgive
+You say that it's ok, and that you're sorry for being so mean to him. You should not have been that angry over   
+such a small thing. He texts back happily. 
+
+After some time, he wishes you goodnight and goes to sleep, leaving you alone in your small bedroom.
+
+-@moments: Check moments
+-@friends2: Text one of your friends
+-@boyfriend4: Text your boyfriend
+
+@dont_forgive
+You pout some more, and blame him for not supporting your viewpoint. He apologizes, and that's when your guilt 
+sinks in. It's really you who's being petty over small things. You tell him it's okay immediately.
+
+After some time, he wishes you goodnight and goes to sleep, leaving you alone in your small bedroom.
+
+@boyfriend4
+choose-if: false
+unavailable-subtitle: He's gone to sleep
+
