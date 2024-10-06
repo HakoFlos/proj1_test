@@ -1,5 +1,0 @@
-# qtime
-# Due to a bug, a qdisplay file must begin with an empty line, here between the comment and the content itself.
-
-(0..59) : "23:" + time
-(60..119) : "0:" + time
