@@ -1,13 +1,9 @@
-title: Watch Educational Videos
+title: Watch educational videos
 new-page: false
 tags: browse
 on-arrival: time += 10
 
-You choose to watch some educational videos on Youtube. They are about physics.
-
-It is now [+ hours : +]: [+ minutes : +].
-
-Look at something else?
+You watch some educational videos on Youtube. They are about physics.
 
 # add different subjects later on
 

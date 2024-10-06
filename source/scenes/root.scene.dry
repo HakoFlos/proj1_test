@@ -1,21 +1,6 @@
 title: Root
 new-page: true
 
-= Peace, for now
+= Late at Night
 
-You are browsing your phone late at night, in your bedroom. The door is closed.  
-
-[? if time = 0 : It's now 23:00. ]
-[? if time = 1 : It's now 23:15. ]
-[? if time = 2 : It's now 23:30. ]
-[? if time = 3 : It's now 23:45. ]
-[? if time = 4 : It's now 0:00. ]
-[? if time = 5 : It's now 0:15. ]
-[? if time = 6 : It's now 0:30. ]
-[? if time = 7 : It's now 0:45. ]
-[? if time = 8 : It's now 1:00. ]
-[? if time = 9 : It's now 1:15. ]
-[? if time = 10 : It's now 1:30. ]
-
-
-- #browse
+- @browse: Start
