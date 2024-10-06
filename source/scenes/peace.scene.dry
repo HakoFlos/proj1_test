@@ -1,5 +1,5 @@
 title: Choose What to Browse
-new-page: true if @peace <= 1
+new-page: true if time = 0
 
 = Peace, for now
 
