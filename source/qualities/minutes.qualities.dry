@@ -1,0 +1,3 @@
+name: minutes
+initial: 0
+minutes = time%60;

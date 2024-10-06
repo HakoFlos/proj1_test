@@ -8,7 +8,7 @@ let your thoughts float.
 
 You stare at the album cover on your screen. 
 
-It is now [+ time : qtime +].
+It is now [+ hours : qhours +]: [+ minutes : qminutes +].
 
 Look at something else?
 
