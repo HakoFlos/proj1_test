@@ -37,6 +37,7 @@ new-page: false
 @browse_videos
 new-page: false
 on-arrival: time += 1
+go-to: @browse
 subtitle: It's not like you have anything better to do.
 
 You watch some educational videos on Youtube. They are about physics.
