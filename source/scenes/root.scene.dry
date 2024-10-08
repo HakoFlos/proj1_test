@@ -1,6 +1,78 @@
 title: Root
 new-page: true
 
-= Late at Night
-
 - @peace : Start
+
+@peace
+new-page: false
+# Peace, for now
+
+[? if time = 0 : You are browsing your phone late at night, in your bedroom. The door is closed. ?]
+
+[? if time = 0 : It's now 23:00. ?]
+[? if time = 1 : It's now 23:15. ?]
+[? if time = 2 : It's now 23:30. ?]
+[? if time = 3 : It's now 23:45. ?]
+[? if time = 4 : It's now 0:00. ?]
+[? if time = 5 : It's now 0:15. ?]
+[? if time = 6 : It's now 0:30. ?]
+[? if time = 7 : It's now 0:45. ?]
+[? if time = 8 : It's now 1:00. ?]
+[? if time = 9 : It's now 1:15. ?]
+[? if time = 10 : It's now 1:30. ?]
+
+[? if time > 0 : Look at something else? ?]
+
+- @browse: Pick something interesting on your phone. 
+
+@browse
+
+-@browse_videos: Studying, perhaps? 
+-@browse_songs: Listen to music
+-@browse_games: Play some games
+-@browse_messages: Check social media
+-@browse_random: Do something random 
+
+
+@browse_videos
+new-page: false
+on-arrival: time += 1
+subtitle: It's not like you have anything better to do.
+
+You watch some educational videos on Youtube. They are about physics.
+
+# add different subjects later on
+
+@browse_songs
+new-page: false
+on-arrival: time += 1
+subtitle: It's not Spotify cuz you're not in America
+
+You listen to music.
+
+@browse_games
+new-page: false
+on-arrival: time += 1
+subtitle: Your favourite pastime
+
+You open itch.io, but there's not really anything interesting that's new. That's not new, either. *(Get it?)*
+
+@browse_messages
+new-page: false
+on-arrival: time += 1
+subtitle: Scratch that, *this* is your favourite pastime
+
+You open WeChat, and scroll aimlessly. There are no new messages.
+
+@browse_random
+new-page: false
+on-arrival: time += 1
+
+*Hehehe.*
+
+# write it later. I'll surely love this part. 
+
+-@end: Game over
+
+@end
+game-over: true
