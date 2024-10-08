@@ -37,7 +37,6 @@ new-page: false
 @browse_videos
 new-page: false
 on-arrival: time += 1
-go-to: @browse
 subtitle: It's not like you have anything better to do.
 
 You watch some educational videos on Youtube. They are about physics.
@@ -47,7 +46,6 @@ You watch some educational videos on Youtube. They are about physics.
 @browse_songs
 new-page: false
 on-arrival: time += 1
-go-to: @browse
 subtitle: It's not Spotify cuz you're not in America
 
 You listen to music.
@@ -55,7 +53,6 @@ You listen to music.
 @browse_games
 new-page: false
 on-arrival: time += 1
-go-to: @browse
 subtitle: Your favourite pastime
 
 You open itch.io, but there's not really anything interesting that's new. That's not new, either. *(Get it?)*
@@ -63,7 +60,6 @@ You open itch.io, but there's not really anything interesting that's new. That's
 @browse_messages
 new-page: false
 on-arrival: time += 1
-go-to: @browse
 subtitle: Scratch that, *this* is your favourite pastime
 
 You open WeChat, and scroll aimlessly. There are no new messages.
@@ -71,13 +67,8 @@ You open WeChat, and scroll aimlessly. There are no new messages.
 @browse_random
 new-page: false
 on-arrival: time += 1
-go-to: @browse
 
 *Hehehe.*
 
 # write it later. I'll surely love this part. 
 
--@end: Game over
-
-@end
-game-over: true
