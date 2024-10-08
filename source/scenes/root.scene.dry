@@ -72,3 +72,7 @@ on-arrival: time += 1
 
 # write it later. I'll surely love this part. 
 
+-@end: Game over
+
+@end
+game-over: true
