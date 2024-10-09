@@ -10,7 +10,7 @@ new-page: false
 
 [? if time = 0 : You are browsing your phone late at night, in your bedroom. The door is closed. ?]
 
-It's now [ + hours + ]:[ + minutes + ]. 
+It's now [ + hours + : ]:[ + minutes + : ]. 
 
 [? if time > 0 : Look at something else? ?]
 
