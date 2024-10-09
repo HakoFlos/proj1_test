@@ -1,12 +1,13 @@
 title: Root
 new-page: true
-on-arrival: {! Q['minutes'] = ((Q['time'])*10)%60; Q['hours'] = 23 + ((Q['time']*10)/60); !}
+on-arrival: {! Q['minutes'] += Q['time']*10; Q['hours'] += Q['time']/6; !}
 
 - @peace : Start
 
 @peace
 new-page: false
 # Peace, for now
+on-arrival: time += 1
 
 [? if time = 0 : You are browsing your phone late at night, in your bedroom. The door is closed. ?]
 
@@ -27,7 +28,6 @@ It's now [+ hours : +]:[+ minutes : +].
 
 @browse_videos
 new-page: false
-on-arrival: time += 1
 go-to: @peace
 subtitle: It's not like you have anything better to do.
 
@@ -37,7 +37,6 @@ You watch some educational videos on Youtube. They are about physics.
 
 @browse_songs
 new-page: false
-on-arrival: time += 1
 go-to: @peace
 subtitle: It's not Spotify cuz you're not in America
 
@@ -45,7 +44,6 @@ You listen to music.
 
 @browse_games
 new-page: false
-on-arrival: time += 1
 go-to: @peace
 subtitle: Your favourite pastime
 
@@ -53,7 +51,6 @@ You open itch.io, but there's not really anything interesting that's new. That's
 
 @browse_messages
 new-page: false
-on-arrival: time += 1
 go-to: @peace
 subtitle: Scratch that, *this* is your favourite pastime
 
@@ -61,7 +58,6 @@ You open WeChat, and scroll aimlessly. There are no new messages.
 
 @browse_random
 new-page: false
-on-arrival: time += 1
 go-to: @peace
 
 *Hehehe.*
