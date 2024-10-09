@@ -1,6 +1,6 @@
 title: Root
 new-page: true
-on-arrival: {! Q['minutes'] = ((Q['time'])*10)%60; Q['hours'] = (Q['time']*10)/60; !}
+on-arrival: {! Q['minutes'] = ((Q['time'])*10)%60; Q['hours'] = 23 + (Q['time']*10)/60; !}
 
 - @peace : Start
 
