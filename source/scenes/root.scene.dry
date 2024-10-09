@@ -1,6 +1,6 @@
 title: Root
 new-page: true
-on-arrival: hours = time/60; minutes = time%60
+on-arrival: hours = 23 if minutes < 6; hours = 0 if minutes >= 6; minutes = (time*10)%60
 
 - @peace : Start
 
