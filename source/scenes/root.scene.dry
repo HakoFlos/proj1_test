@@ -1,6 +1,6 @@
 title: Root
 new-page: true
-on-arrival: minutes = (time*10)%60
+on-arrival: minutes+=10
 
 - @peace : Start
 
