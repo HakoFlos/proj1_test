@@ -1,6 +1,6 @@
 title: Root
 new-page: true
-on-arrival: hours = 23 if minutes < 6; hours = 0 if minutes >= 6; minutes = (time*10)%60
+on-arrival: minutes = (time*10)%60
 
 - @peace : Start
 
@@ -10,7 +10,8 @@ new-page: false
 
 [? if time = 0 : You are browsing your phone late at night, in your bedroom. The door is closed. ?]
 
-It's now [ + hours + ]:[ + minutes + ].
+[? if minutes < 6: It's now 23:[ + minutes + ]. ?]
+[? if minutes >= 6: It's now 0:[ + minutes + ]. ?]
 
 [? if time > 0 : Look at something else? ?]
 
