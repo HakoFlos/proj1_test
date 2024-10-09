@@ -1,6 +1,6 @@
 title: Root
 new-page: true
-on-arrival: minutes+=10
+on-arrival: {! Q['minutes'] = Q['time']*10%60; Q['hours'] = Q['time']*10/60; !}
 
 - @peace : Start
 
@@ -10,8 +10,7 @@ new-page: false
 
 [? if time = 0 : You are browsing your phone late at night, in your bedroom. The door is closed. ?]
 
-[? if minutes < 6: It's now 23:[ + minutes + ]. ?]
-[? if minutes >= 6: It's now 0:[ + minutes + ]. ?]
+It's now [ + hours + ]:[ + minutes + ]. 
 
 [? if time > 0 : Look at something else? ?]
 
