@@ -1,17 +1,20 @@
 title: Root
 new-page: true
-on-arrival: {! Q['minutes'] += Q['time']*10; Q['hours'] += Q['time']/6; !}
 
 - @peace : Start
 
 @peace
 new-page: false
-# Peace, for now
-on-arrival: time += 1
+on-arrival: time = 0
 
 [? if time = 0 : You are browsing your phone late at night, in your bedroom. The door is closed. ?]
 
-It's now [+ hours : +]:[+ minutes : +]. 
+[? if time = 0 : It's now 23:00. ?]
+[? if time = 1 : It's now 23:10. ?]
+[? if time = 2 : It's now 23:20. ?]
+[? if time = 3 : It's now 23:30. ?]
+[? if time = 4 : It's now 23:40. ?]
+[? if time = 5 : It's now 23:50. ?]
 
 [? if time > 0 : Look at something else? ?]
 
@@ -25,11 +28,12 @@ It's now [+ hours : +]:[+ minutes : +].
 -@browse_messages: Check social media
 -@browse_random: Do something random 
 
-
 @browse_videos
 new-page: false
-go-to: @peace
+on-arrival: time += 1
+go-to: arrival if time = 5; peace
 subtitle: It's not like you have anything better to do.
+on-arrival: studied = 1 if time = 5
 
 You watch some educational videos on Youtube. They are about physics.
 
@@ -37,31 +41,100 @@ You watch some educational videos on Youtube. They are about physics.
 
 @browse_songs
 new-page: false
-go-to: @peace
-subtitle: It's not Spotify cuz you're not in America
+on-arrival: time += 1
+go-to: arrival if time = 5; peace
 
 You listen to music.
 
 @browse_games
 new-page: false
-go-to: @peace
-subtitle: Your favourite pastime
+on-arrival: time += 1
+go-to: arrival if time = 5; peace
 
 You open itch.io, but there's not really anything interesting that's new. That's not new, either. *(Get it?)*
 
 @browse_messages
 new-page: false
-go-to: @peace
-subtitle: Scratch that, *this* is your favourite pastime
+on-arrival: time += 1
+go-to: arrival if time = 5; peace
 
 You open WeChat, and scroll aimlessly. There are no new messages.
 
 @browse_random
 new-page: false
-go-to: @peace
+on-arrival: time += 1
+go-to: arrival if time = 5; peace
 
-*Hehehe.*
+to be added.
 
-# write it later. I'll surely love this part. 
+@arrival
+new-page: true
+
+content.
+
+-@studying: You were studying, not playing
+-@lying: Say that you're going to sleep in a few minutes
+-@arguing: Argue that it's not her affair
+
+@studying
+new-page: false
+view-if: studied = 1
+
+content.
+
+-@silence: You don't know what to say
+
+@lying
+new-page: false
+
+content.
+
+-@silence: You don't know what to say
+
+@arguing
+new-page: false
+
+content.
+
+-@silence: You don't know what to say
+
+@silence
+new-page: false
+
+content.
+
+-@sleep: Go to sleep
+-@phone: Return to your phone
+-@window: Look out the window
+
+@sleep
+new-page: false
+game-over: true
+
+content.
+
+@phone
+new-page: false
+
+content.
+
+-@truth: That's not what happened
+
+@truth
+new-page: false
+game-over: true
+
+content.
+
+@window
+new-page: false
+game-over: true
+
+content.
+
+
+
+
+
 
 
