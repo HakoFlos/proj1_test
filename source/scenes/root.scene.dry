@@ -5,7 +5,6 @@ new-page: true
 
 @peace
 new-page: false
-on-arrival: time = 0
 
 [? if time = 0 : You are browsing your phone late at night, in your bedroom. The door is closed. ?]
 
@@ -25,8 +24,8 @@ on-arrival: time = 0
 -@browse_videos: Studying, perhaps? 
 -@browse_songs: Listen to music
 -@browse_games: Play some games
--@browse_messages: Check social media
 -@browse_random: Do something random 
+
 
 @browse_videos
 new-page: false
@@ -53,13 +52,6 @@ go-to: arrival if time = 5; peace
 
 You open itch.io, but there's not really anything interesting that's new. That's not new, either. *(Get it?)*
 
-@browse_messages
-new-page: false
-on-arrival: time += 1
-go-to: arrival if time = 5; peace
-
-You open WeChat, and scroll aimlessly. There are no new messages.
-
 @browse_random
 new-page: false
 on-arrival: time += 1
@@ -70,69 +62,11 @@ to be added.
 @arrival
 new-page: true
 
-content.
+A loud knock on the door. It's your mom.
 
--@studying: You were studying, not playing
--@lying: Say that you're going to sleep in a few minutes
--@arguing: Argue that it's not her affair
+"Why are you still playing, not going to bed? "
 
-@studying
-new-page: false
-view-if: studied = 1
-
-content.
-
--@silence: You don't know what to say
-
-@lying
-new-page: false
-
-content.
-
--@silence: You don't know what to say
-
-@arguing
-new-page: false
-
-content.
-
--@silence: You don't know what to say
-
-@silence
-new-page: false
-
-content.
-
--@sleep: Go to sleep
--@phone: Return to your phone
--@window: Look out the window
-
-@sleep
-new-page: false
-game-over: true
-
-content.
-
-@phone
-new-page: false
-
-content.
-
--@truth: That's not what happened
-
-@truth
-new-page: false
-game-over: true
-
-content.
-
-@window
-new-page: false
-game-over: true
-
-content.
-
-
+You look at her undecisively, your grip instinctively tightening on your phone. 
 
 
 
