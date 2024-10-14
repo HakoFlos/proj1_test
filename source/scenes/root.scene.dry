@@ -20,6 +20,7 @@ new-page: false
 - @browse: Pick something interesting on your phone. 
 
 @browse
+new-page: false
 
 -@browse_videos: Studying, perhaps? 
 -@browse_songs: Listen to music
